@@ -16,12 +16,12 @@ const Products = () =>  {
   return <div className='productWrapper'>
         {
             product.map((products) => {
-                <div className='card' key={products.id}>
+               return ( <div className='card' key={products.id}>
                     <img src={products.image} alt="" />
                     <h4>{products.title}</h4>
                     <h5>{products.price}</h5>
                     <button className='btn'>Add to cart</button>
-                </div>
+                </div>)
             })
 
         
